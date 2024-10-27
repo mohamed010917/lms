@@ -10,3 +10,6 @@ Route::get('/', function () {
     return view('welcome',$date);
 
 });
+route::get("hello",function(){
+    return "hello" ;
+});

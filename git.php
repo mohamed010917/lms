@@ -37,3 +37,5 @@ git clone url =>باخد نسخه من برؤجكت
 git fatch => بجسب التحديثات الي حصلت علي الريسي اؤ النسخ
 git remote => give you oragine if this clone 
 git push oragin => push data to clonn
+git remote -v
+git remote add origin E:/fourLaraveProject/notImportant/lms.git =>لؤ حصل خطا في المسارات

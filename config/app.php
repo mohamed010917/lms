@@ -123,5 +123,6 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
     Laravel\Sanctum\SanctumServiceProvider::class,
+    App\Providers\InterFaceRepostry::class,
 
 ];

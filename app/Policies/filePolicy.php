@@ -6,23 +6,20 @@ use App\Models\User;
 use App\Models\admin;
 use App\Models\file;
 use Illuminate\Auth\Access\Response;
+use Carbon\Carbon;
 
 class filePolicy
 {
-    /**
-     * Determine whether the user can view any models.
-     */
+    
     public function viewAny(User | admin $user): bool
     {
-        return true ;
+        return $user->getTable() == "admins" ;
     }
 
-    /**
-     * Determine whether the user can view the model.
-     */
+ 
     public function view(User | admin $user, file $file): bool
     {
-        return true ;
+        return false ;
     }
 
     /**
